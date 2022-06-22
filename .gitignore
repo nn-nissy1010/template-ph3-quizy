@@ -1,0 +1,4 @@
+db/var/*
+.history
+.DS_Store
+.vscode
