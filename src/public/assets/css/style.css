@@ -1,0 +1,245 @@
+.question {
+    text-align: left;
+    font-size: 17px;
+    font-weight: 1000;
+    padding-left: 25px;
+}
+
+.question ::after {
+    content: "";
+    display: block;
+    width: 107px;
+    height: 2.1px;
+    background-color: #00ab36;
+    position: relative;
+    bottom: 0;
+    top: 6px;
+}
+
+.content {
+    margin: 0 auto;
+    text-align: center;
+    width: 16.5cm;
+}
+
+.content ul{
+    margin: 0 auto 50px auto;
+}
+
+.before {
+    width: 16.5cm;
+    height: 1.34cm;
+    margin: 5px auto;
+    font-size: 16px;
+    font-weight: 1000;
+    background-color: #FFFFFF;
+    color: #000;
+    border-style: solid;
+    border-width: 0.001px;
+    border-color: #ccc;
+    box-shadow: 0 2px 5px 0 #ccc;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.after {
+    pointer-events: none;
+}
+
+.correct {
+    width: 16.5cm;
+    height: 1.34cm;
+    margin: 5px auto;
+    font-size: 16px;
+    font-weight: 1000;
+    background-color: #287dff;
+    color: #fff;
+    border-style: solid;
+    border-width: 0.001px;
+    border-color: #ccc;
+    box-shadow: 0 2px 5px 0 #ccc;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.incorrect {
+    width: 16.5cm;
+    height: 1.34cm;
+    margin: 5px auto;
+    font-size: 16px;
+    font-weight: 1000;
+    background-color: #FF5128;
+    color: #fff;
+    border-style: solid;
+    border-width: 0.001px;
+    border-color: #ccc;
+    box-shadow: 0 2px 5px 0 #ccc;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.comment {
+    width: 16.5cm;
+    height: 2.5cm;
+    margin: 5px auto 10px auto;
+    padding: 10px 20px;
+    background-color: #eee;
+    color: #000;
+    border-style: solid;
+    border-width: 0.001px;
+    border-color: #fff;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 2.4em;
+}
+
+.blue-line {
+    font-size: 16px;
+    font-weight: 1000;
+    text-decoration: underline solid #287dff 3px;
+    text-underline-offset: 0.3em;
+}
+
+.red-line {
+    font-size: 16px;
+    font-weight: 1000;
+    text-decoration: underline solid #FF5128 3px;
+    text-underline-offset: 0.3em;
+}
+
+.nothing {
+    display: none;
+}
+
+
+/* ページ全体 */
+
+.main {
+    margin: 0 auto;
+    width: 570px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+/* 問題 */
+
+.quiz {
+    margin-top: 20px;
+}
+
+.quiz h1 {
+    font-size: 17px;
+    display: inline;
+    background: linear-gradient(transparent 70%, #f7ff4e 0);
+}
+
+.quiz img {
+    width: 100%;
+    margin: 0 auto 0;
+}
+
+.quiz ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 13px 0;
+}
+
+.quiz li {
+    font-weight: 600;
+    padding: 0.1em 0.5em;
+    border: solid 1px #d3d3d3;
+    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.2);
+    margin-bottom: 6px;
+    height: 39px;
+    padding-left: 13px;
+    padding-top: 13px;
+}
+
+/* 選択肢（回答前） */
+
+.answerlist {
+    list-style: none;
+    cursor: pointer;
+    width: 16.5cm;
+    height: 1.34cm;
+    padding: 14px;
+    margin: 15px auto;
+    font-size: 16px;
+    font-weight: 1000;
+    background-color: #FFFFFF;
+    color: #000;
+    border-style: solid;
+    border-width: 0.001px;
+    border-color: #ccc;
+    box-shadow: 0 2px 5px 0 #ccc;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* 選択肢（回答後）（正解） */
+
+.answer_valid {
+    width: 16.5cm;
+    height: 1.34cm;
+    padding: 14px;
+    margin: 15px auto;
+    font-size: 16px;
+    font-weight: 1000;
+    background-color: #287dff;
+    color: #fff;
+    border-style: solid;
+    border-width: 0.001px;
+    border-color: #ccc;
+    box-shadow: 0 2px 5px 0 #ccc;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* 選択肢（回答後）（不正解） */
+
+.answer_invalid {
+    width: 16.5cm;
+    height: 1.34cm;
+    padding: 14px;
+    margin: 15px auto;
+    font-size: 16px;
+    font-weight: 1000;
+    background-color: #FF5128;
+    color: #fff;
+    border-style: solid;
+    border-width: 0.001px;
+    border-color: #ccc;
+    box-shadow: 0 2px 5px 0 #ccc;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* 問題 答えボックス */
+
+.answerbox {
+    display: none;
+    width: 16.5cm;
+    height: 2.5cm;
+    margin: 20px auto 10px auto;
+    padding: 10px 20px;
+    background-color: #eee;
+    color: #000;
+    border-style: solid;
+    border-width: 0.001px;
+    border-color: #fff;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 2.4em;
+}
+
+/* 問題 答えボックス 正解 */
+
+.answerbox_valid {
+    background: linear-gradient(transparent 70%, #08b3f0 0);
+}
+
+/* 問題 答えボックス 不正解 */
+
+.answerbox_invalid {
+    background: linear-gradient(transparent 70%, #fd6647 0);
+}
