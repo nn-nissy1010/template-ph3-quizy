@@ -9,7 +9,7 @@ use App\Choice;
 
 class AdminChoiceAddController extends Controller
 {
-    public function index(Request $request, $big_question_id, $question_id)
+    public function index($big_question_id, $question_id)
     {
         $questions = Question::where('big_question_id',$big_question_id)->get();
         $param = ['big_question_id' => $big_question_id,'question_id' => $question_id, 'questions' => $questions];

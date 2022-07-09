@@ -10,7 +10,7 @@ class AdminListController extends Controller
     public function index(Request $request)
     {
         $items = BigQuestion::orderBy('order_num', 'asc')->get();
-        $count = BigQuestion::count();
+        $count = $items->count();
         $param = ['items' => $items, 'count' => $count];
         return view('auth.list',$param);
     }

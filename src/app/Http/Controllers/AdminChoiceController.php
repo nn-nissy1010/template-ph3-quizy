@@ -15,12 +15,7 @@ class AdminChoiceController extends Controller
             $query->where('big_question_id', $big_question_id);
         })->where('question_num', $question_id)->get();
         $questions = Question::where('big_question_id',$big_question_id)->get();
-        $data = [
-            'choices' => $choices,
-            'questions' => $questions,
-            'question_id' =>$question_id,
-            'big_question_id' => $big_question_id,
-        ];
+        $data = compact( "choices", "questions", "question_id","big_question_id" );
         return view('auth.choice', $data);
     }
 

@@ -10,7 +10,7 @@ class BigQuestion extends Model
 
     use SoftDeletes;
 
-    protected $guarded = array('id');
+    protected $guarded = ['id'];
 
     public static $rules = array(
         'name' => 'required',

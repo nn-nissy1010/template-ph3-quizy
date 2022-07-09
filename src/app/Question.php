@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Question extends Model
 {
     use SoftDeletes;
-    
+
     protected $guarded = array('id');
 
     public static $rules = array(
@@ -17,7 +17,7 @@ class Question extends Model
         'place_name' => 'required'
     );
 
-    public function choice()
+    public function choices()
     {
         return $this->hasMany('App\Choice');
     }
