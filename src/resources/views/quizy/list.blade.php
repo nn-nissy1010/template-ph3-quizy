@@ -10,7 +10,7 @@
 <body>
 
     @foreach($items as $item)
-    <a href="http://localhost/quizy/{{$loop->iteration}}">{{$item->name}}</a>
+    <a href="{{ route('place',['id' => $loop->iteration]) }}">{{$item->name}}</a>
     @endforeach
 
 

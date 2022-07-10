@@ -20,9 +20,9 @@ Route::get('/', function () {
 });
 
 
-Route::get('quizy', 'BigQuestionController@index');
+Route::get('quizy', 'BigQuestionController@index')->name('list');
 
-Route::get('quizy/{id?}', 'QuizyController@index');
+Route::get('quizy/{id?}', 'QuizyController@index')->name('place');
 
 Route::get('admin', 'AdminController@index')
     ->middleware('auth');
